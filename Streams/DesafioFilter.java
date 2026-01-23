@@ -18,7 +18,7 @@ public class DesafioFilter {
         Predicate<Produto> promocao = p -> p.promocao == true;
         Function<Produto, String> desconto = p -> "Produto: " + p.nome + ", Preco: " + p.preco * 0.9;
         Function<Produto, String> produtoPromoonal = p -> "Produto: " + p.nome + ", Promocional: " ;
-
+// pipeline de execução
         produtos.stream()
         .filter(caro)
         .filter(promocao)
